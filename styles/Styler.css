@@ -1,0 +1,566 @@
+/* HEADER/PARTE PRINCIPAL */
+
+.imagen_header {
+  width: 100%;
+  height: 600px;
+  z-index: 100;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.titulo_principal {
+  z-index: 200;
+  position: absolute;
+  font-family: "Lovers Quarrel", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 100px;
+  margin-left: 50px;
+  color: rgb(255, 55, 55);
+}
+.subtitulo_principal {
+  z-index: 200;
+  position: absolute;
+  font-family: "Lovers Quarrel", cursive;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 70px;
+  margin-left: 50px;
+  margin-top: 230px;
+  color: hsla(0, 0%, 0%, 0.8);
+}
+.boton_cabanas {
+  z-index: 200;
+  font-size: 50px;
+  position: absolute;
+  margin-top: 375px;
+  margin-left: 350px;
+  color: hsla(0, 0%, 0%, 0.8);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  padding: 10px;
+}
+.boton_conocenos {
+  z-index: 200;
+  font-size: 50px;
+  position: absolute;
+  margin-top: 375px;
+  margin-left: 50px;
+  color: hsla(0, 0%, 0%, 0.8);
+  border-radius: 20px;
+  background-color: rgba(255, 0, 0, 0.517);
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* BARRA DE NAVEGACION/CONTACTOS */
+.botones_barra_navegacion {
+  color: white;
+  position: fixed;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  top: 14px;
+  padding: 2px;
+  text-decoration: none;
+}
+.boton_consultas {
+  right: 25px;
+}
+.boton_las_cabanas {
+  right: 125px;
+}
+.boton_ubicacion {
+  right: 250px;
+}
+.boton_complejo {
+  right: 355px;
+}
+.titulo_barra_navegacion {
+  z-index: 400;
+  position: fixed;
+  font-family: "Lovers Quarrel", cursive;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 40px;
+  margin-left: 50px;
+  top: -32px;
+  color: rgb(255, 255, 255);
+}
+.barra_navegacion {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(255, 55, 55);
+  z-index: 300;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------ MAIN - UBICACION COMPLEJO ---------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+.marco_decorativo_exterior {
+  width: 400px;
+  max-width: 1000px;
+  height: 350px;
+  margin: auto;
+  padding: 5px; /* Espacio entre marcos */
+  border: 2px solid red;
+  border-radius: 40px;
+  box-sizing: border-box;
+  background: none;
+
+  /* ✨ Desplazamiento visual */
+  position: absolute;
+  top: 1340px; /* lo sube un poco */
+  right: 220px; /* lo corre un poco a la derecha */
+}
+.marco_decorativo_interior {
+  width: 400px;
+  max-width: 1000px;
+  height: 350px;
+  margin: auto;
+  padding: 5px; /* Espacio entre marcos */
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 40px;
+  box-sizing: border-box;
+  background: none;
+
+  /* ✨ Desplazamiento visual */
+  position: static;
+  top: 1360px; /* lo sube un poco */
+  right: 215px; /* lo corre un poco a la derecha */
+}
+
+.ubicacion-section {
+  padding: 80px 20px;
+  background-color: white;
+}
+
+.contenedor_ubicacion {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+.ubicacion_calle {
+  position: absolute;
+  top: 1700px;
+  font-size: 20px;
+  left: 200px;
+  color: rgba(0, 0, 0, 0.801);
+}
+.ubicacion_ciudad {
+  position: absolute;
+  top: 1720px;
+  font-size: 20px;
+  left: 180px;
+  color: rgba(0, 0, 0, 0.801);
+}
+.ubicacion-mapa {
+  text-align: center;
+}
+
+.mapa {
+  width: 350px;
+  height: 350px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: left;
+  position: absolute;
+  left: 100px;
+  top: 1350px;
+}
+
+.direccion {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 5px 0;
+  display: flex;
+  justify-content: left;
+}
+
+.titulo-ubicacion {
+  font-size: 2rem;
+  color: #2c3e50;
+  position: absolute;
+  top: 1350px;
+  left: 930px;
+}
+
+.lista-lugares {
+  list-style: none;
+  margin-top: 770px;
+  position: absolute;
+  top: 700px;
+  left: 900px;
+}
+
+.lista-lugares li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.lista-lugares li:before {
+  content: "📍 ";
+  margin-right: 10px;
+}
+
+/* -------------------------------------------------------------- */
+/* ------------------- MAIN - CONOCE EL COMPLEJO ---------------- */
+/* -------------------------------------------------------------- */
+
+.titulo_main_complejo {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: hsla(0, 0%, 0%, 0.8);
+  font-size: 40px; /* más razonable */
+  z-index: 100;
+  position: relative;
+  margin: 650px 0px 20px 510px; /* o padding */
+}
+
+.lovers-quarrel-regular {
+  font-family: "Lovers Quarrel", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubicacion_complejo {
+  top: 770px;
+}
+.incluido_cabana {
+  top: 965px;
+}
+.contamos_con {
+  top: 915px;
+}
+.descripcion {
+  z-index: 100;
+  position: absolute;
+  left: 50px;
+  font-size: 30px;
+  min-width: 10%;
+  max-width: 40%;
+  color: hsla(0, 0%, 0%, 0.8);
+}
+.imagenes_incluido_complejo {
+  z-index: 100;
+  position: absolute;
+  top: 785px;
+  right: 70px;
+  border: 0px solid transparent;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0px;
+  width: 37%;
+  max-width: 1000px;
+  height: auto;
+}
+
+/* -------------------------------------------------- */
+/* ---------- MAIN - TARJETA DE CABAÑAS ------------- */
+/* -------------------------------------------------- */
+
+.cabanias {
+  position: absolute;
+  top: 1800px;
+}
+.descripcion_ubicacion {
+  position: absolute;
+  top: 1410px;
+  right: 300px;
+}
+.descubri {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+  color: #ff0000;
+  display: flex;
+  left: 100px;
+}
+
+.cabanas {
+  display: flex;
+}
+
+.forma_tarjeta {
+  z-index: 100;
+  width: 355px;
+  height: 485px;
+  background-color: white;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
+  border: 2px solid #ff0000;
+  border-radius: 20px;
+}
+
+.imagen_tarjeta {
+  z-index: 200;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  width: 100%;
+  max-height: 200px;
+}
+
+.contenedor_botones {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 15px;
+}
+
+.botones_tarjeta {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-radius: 5px;
+  margin-top: 25px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Botón izquierdo: más pequeño y más arriba */
+.detalles_cabana_tarjeta {
+  font-size: 12px;
+  padding: 4px 10px;
+  background-color: white;
+  border: 1px solid red;
+  color: rgb(0, 0, 0);
+  margin-bottom: 0px;
+}
+
+/* Botón derecho: más grande y más abajo */
+.consulta_cabana_tarjeta {
+  font-size: 16px;
+  padding: 8px 20px;
+  background-color: red;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.titulo_tarjeta {
+  font-weight: 900;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.descripcion_tarjeta {
+  padding: 0px;
+  margin-left: 5px;
+}
+
+.articulos_cabana {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 12px; /* Menor separación entre filas y columnas */
+  max-width: 400px;
+  margin-left: 5px;
+}
+
+.articulos_cabana p {
+  display: flex;
+  align-items: center;
+  gap: 4px; /* Menor espacio entre ícono y texto */
+  margin: 5px; /* Elimina márgenes verticales */
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1.2; /* Opcional: reduce altura de línea */
+}
+
+/* ---------------------------------------------------------------------------- */
+/* -------------------------- MAIN - SECCION DE CONSULTAS ----------------------*/
+/* ---------------------------------------------------------------------------- */
+
+.disponibilidades {
+  position: relative;
+  top: 1750px;
+}
+
+.marco_decorativo {
+  width: 100%;
+  max-width: 1000px; /* evita que se estire de más */
+  margin: auto; /* centra horizontalmente */
+  padding: 20px; /* espacio interior para todo */
+  border: 1px solid;
+  border-radius: 35px;
+  position: relative;
+  top: 0; /* quitamos el desplazamiento vertical */
+}
+
+.marco_exterior {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 5px; /* Espacio entre marcos */
+  border: 2px solid red;
+  border-radius: 40px;
+  box-sizing: border-box;
+  position: relative;
+  background: none;
+
+  /* ✨ Desplazamiento visual */
+  position: relative;
+  top: 12px; /* lo sube un poco */
+  left: -12px; /* lo corre un poco a la derecha */
+}
+
+.marco_interior {
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 35px;
+  box-sizing: border-box;
+  background: none;
+
+  /* Desplazamiento visual */
+  position: relative;
+  top: -12px; /* lo sube un poco */
+  left: 12px; /* lo corre un poco a la derecha */
+}
+
+.disponibilidades h4 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.titulo_disponibilidad {
+  color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  margin-top: 10px; /* espacio superior */
+  margin-bottom: 20px; /* separa del formulario */
+  text-align: center;
+}
+.formulario-consulta {
+  max-width: 1000px; /* El ancho máximo del formulario será de 1000px */
+  margin: auto; /* Centra horizontalmente el formulario */
+  padding: 20px; /* Espacio interno alrededor del contenido (borde interior) */
+}
+
+.grid-form label {
+  margin: -30px 0px -20px 0px; /* Sin márgenes arriba/laterales, 5px abajo */
+}
+
+/* Contenedor que organiza los campos del formulario en grilla */
+.grid-form {
+  display: grid; /* Usa grid layout para organizar los elementos */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* Crea columnas que se adaptan automáticamente, con mínimo 200px y máximo 1 fracción disponible */
+  gap: 30px; /* Espacio entre columnas y filas */
+  align-items: end; /* Alinea los elementos al final de cada celda (abajo) */
+}
+
+/* Cada grupo (label + input) está dentro de un <div> y se muestra en columna */
+.grid-form div {
+  display: flex; /* Usa flexbox para organizar internamente */
+  flex-direction: column; /* Apila elementos verticalmente (label arriba, input abajo) */
+}
+
+/* Estilo general para todos los inputs y áreas de texto */
+.grid-form input,
+.grid-form textarea {
+  padding: 15px; /* Relleno interior (altura de las barras) */
+  font-size: 14px; /* Tamaño del texto dentro de los inputs */
+  border-radius: 8px; /* Bordes redondeados */
+  border: 1px solid #333; /* Borde de 1px gris oscuro */
+}
+
+/* Impide que el usuario pueda agrandar la caja de texto (mensaje) manualmente */
+.grid-form textarea {
+  resize: none;
+}
+
+/* Hace que el campo de "mensaje" ocupe todo el ancho del grid (de columna 1 a la última) */
+.mensaje-area {
+  grid-column: 1 / -1;
+}
+
+/* Ubica el botón en el centro y le da un ancho que ocupa 2 columnas desde la segunda */
+.boton-submit {
+  grid-column: 2 / span 2; /* Empieza en la columna 2 y ocupa 2 columnas */
+  display: flex; /* Usa flexbox */
+  justify-content: center; /* Centra el botón horizontalmente */
+}
+
+/* Estilos del botón de envío */
+.boton-submit button {
+  background-color: #2e3e32; /* Color de fondo oscuro (verde oscuro) */
+  color: white; /* Texto blanco */
+  padding: 15px 30px; /* Relleno interno (alto y ancho del botón) */
+  border: none; /* Sin borde */
+  border-radius: 10px; /* Bordes redondeados */
+  font-size: 18px; /* Tamaño del texto */
+  cursor: pointer; /* Cambia el cursor a "mano" al pasar por encima */
+}
+
+/* ------------------------------- FOOTER - TODO EL FOOTER ----------------------------------------- */
+
+.contactos {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Columna izquierda más angosta */
+  gap: 20px;
+  width: 100%;
+  margin: auto;
+  padding: 30px;
+  align-items: center;
+  background-color: none;
+  border-top: 3px solid rgb(255, 255, 255);
+  position: relative;
+  left: 0px;
+  display: flex;
+  justify-content: space-around;
+  top: 1800px;
+}
+
+.columna-izquierda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+}
+
+.columna-izquierda img {
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.nombre_cabana_footer {
+  margin-top: 0;
+  font-family: "Lovers Quarrel", cursive;
+  color: #2e2e2e;
+}
+
+.columna-derecha p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  font-size: 30px;
+}
+.columna-derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+}
+.columna-derecha img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.seccion_contacto {
+  font-size: 40px;
+}

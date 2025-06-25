@@ -4,29 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TP 1 - Cabañas SQL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cedarville+Cursive&family=Lovers+Quarrel&display=swap"
+      rel="stylesheet"
+    />
+    />
+
+    <link rel="stylesheet" href="./styles/Styler.css" />
   </head>
   <body>
     <!-- INICIO HEADER -->
     <header>
       <!-- INICIO BARA DE INFORMACION/CONTACTOS -->
       <section id="BarraInfo">
-        <h1>Cabañas SQL</h1>
-        <h3>Descubri el poder de las relaciones</h3>
-        <nav>
-          <a href="#complejo">El Complejo</a>
-          <a href="#ubicacion">Ubicación</a>
-          <a href="#cabanas">Las Cabañas</a>
-          <a href="#consultas">Consultas</a>
+        <h1 class="titulo_principal">Cabañas SQL</h1>
+        <h3 class="subtitulo_principal">Descubri el poder de las relaciones</h3>
+        <h3 class="titulo_barra_navegacion">Cabañas SQL</h3>
+        <nav class="barra_navegacion">
+          <a href="#complejo" class="botones_barra_navegacion boton_complejo"
+            >El Complejo</a
+          >
+          <a href="#ubicacion" class="botones_barra_navegacion boton_ubicacion"
+            >Ubicación</a
+          >
+          <a href="#cabanas" class="botones_barra_navegacion boton_las_cabanas"
+            >Las Cabañas</a
+          >
+          <a href="#consultas" class="botones_barra_navegacion boton_consultas"
+            >Consultas</a
+          >
         </nav>
       </section>
       <!-- FIN SECCION BARRA DE INFORMACION/CONTACTOS -->
 
       <!-- INICIO SECCION PRINCIPAL -->
       <section id="LoPrincipal">
-        <a href="#conocenos">Conócenos</a>
-        <a href="#cabanias">Cabañas</a>
+        <a href="#conocenos" class="boton_conocenos">Conócenos</a>
+        <a href="#cabanias" class="boton_cabanas">Cabañas</a>
         <img
-          src="https://denomades.imgix.net/destinos/bariloche/994/san-martin-andes-7-lagos.jpg"
+          class="imagen_header"
+          src="./public/image.png"
           alt=""
           width="500"
         />
@@ -40,15 +61,15 @@
     <!-- INICIO MAIN -->
     <main>
       <!-- INICIO DE SECCION EL COMPLEJO -->
-      <section id="ElComplejo">
-        <h3>Conoce Nuestro Complejo</h3>
-        <p>
+      <section id="ElComplejo" class="seccion_complejo">
+        <p class="titulo_main_complejo">Conoce Nuestro Complejo</p>
+        <p class="descripcion ubicacion_complejo">
           Ubicado en una calle cerrada contra la montaña, a una cuadra del lago
           Lacar y a cuatro del centro de la ciudad, es el lugar ideal para
           descansar estando cerca de todo.
         </p>
-        <p>Contamos además con:</p>
-        <ul>
+        <p class="descripcion contamos_con">Contamos además con</p>
+        <ul class="descripcion incluido_cabana">
           <li>
             <img
               src="https://thumbs.dreamstime.com/b/icono-de-la-piscina-100738242.jpg"
@@ -85,52 +106,70 @@
             />Solarium
           </li>
         </ul>
-        <img
-          src="https://th.bing.com/th/id/OIP.OjPhErhDfELTva1sbRV1wQHaFj?rs=1&pid=ImgDetMain"
-          alt=""
-          width="200"
-        />
-        <img
-          src="https://www.welcomeargentina.com/plantillas/grandes/54998-07Gr.jpg"
-          alt=""
-          width="200"
-        />
-        <img
-          src="https://www.interpatagonia.com/plantillas/30537-01.jpg"
-          alt=""
-          width="200"
-        />
-        <img
-          src="https://www.welcomeargentina.com/plantillas/grandes/54998-08Gr.jpg"
-          alt=""
-          width="200"
-        />
+        <section>
+          <img
+            class="imagenes_incluido_complejo"
+            src="https://www.welcomeargentina.com/plantillas/grandes/54998-07Gr.jpg"
+            alt=""
+            width="200"
+          />
+          <img
+            class="imagenes_incluido_complejo"
+            src="https://www.welcomeargentina.com/plantillas/grandes/54998-08Gr.jpg"
+            alt=""
+            width="200"
+          />
+          <img
+            class="imagenes_incluido_complejo"
+            src="https://www.interpatagonia.com/plantillas/30537-01.jpg"
+            alt=""
+            width="200"
+          />
+          <img
+            class="imagenes_incluido_complejo"
+            src="https://th.bing.com/th/id/OIP.OjPhErhDfELTva1sbRV1wQHaFj?rs=1&pid=ImgDetMain"
+            alt=""
+            width="200"
+          />
+        </section>
       </section>
       <!-- FIN SECCION EL COMPLEJO -->
 
       <!-- INICIO SECCION DE UBICACION -->
-      <section id="LaUbicacion" class="">
-        <div id="ubicacion"></div>
-        <h3>Conoce nuestra excelente ubicación</h3>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d539.0054081867022!2d-71.35533852173582!3d-40.16288306907891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96110e6d834f86ef%3A0x3476a3492cfd2772!2sApart%20Rose%20Garden!5e0!3m2!1ses!2sar!4v1746829002611!5m2!1ses!2sar"
-          width="300"
-          height="225"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <p>Coronel Diaz 1156</p>
-        <p>San Martín de los Andes</p>
-        <p>Vas a estar cerca de todo</p>
-        <p>Distancia desde el complejo</p>
-        <ul>
-          <li>5 minutos de la costanera del lago.</li>
-          <li>10 minutos del centro civico.</li>
-          <li>30 minutos del cerro chapelco.</li>
-          <li>5 minutos del inicio de la ruta 7 lagos.</li>
-        </ul>
+      <section id="LaUbicacion" class="ubicacion-section">
+        <!-- Lado Izquierdo: Mapa y direcciones -->
+        <div class="ubicacion-mapa">
+          <iframe
+            class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d539.0054081867022!2d-71.35533852173582!3d-40.16288306907891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96110e6d834f86ef%3A0x3476a3492cfd2772!2sApart%20Rose%20Garden!5e0!3m2!1ses!2sar!4v1746829002611!5m2!1ses!2sar"
+            width="100%"
+            height="250"
+            style="border: 0; border-radius: 15px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="ubicacion_nombre">
+            <p class="ubicacion_calle">Coronel Diaz 1156</p>
+            <p class="ubicacion_ciudad">San Martín de los Andes</p>
+          </div>
+        </div>
+
+        <!-- Lado Derecho: Texto y lista -->
+        <div class="marco_decorativo_exterior">
+          <div class="marco_decorativo_interior"></div>
+        </div>
+        <div class="ubicacion-detalles">
+          <h3 class="titulo-ubicacion">Vas a estar cerca de todo</h3>
+          <p class="descripcion_ubicacion">Distancia desde el complejo</p>
+          <ul class="lista-lugares">
+            <li>5 minutos de la costanera del lago</li>
+            <li>10 minutos del centro cívico</li>
+            <li>30 minutos del cerro Chapelco</li>
+            <li>5 minutos del inicio de la ruta 7 lagos</li>
+          </ul>
+          <!-- Barco decorativo -->
+        </div>
       </section>
       <!-- FIN SECCION DE UBICACION -->
 
@@ -147,93 +186,214 @@
         </div>
         <!-- cuerpo / texto a info -->
         <div class="main"></div>
-        <div class="cardFooter">
-          <a href="#consultas">Consultas</a
-          ><a href="./pages/detalles_cabana.html">Ir a pagina 2</a>
-        </div>
-        <div id="cabanias">
-          <div id="cabanas">
-            <h3>Descubrí el placer de descansar como si estuvieras en casa</h3>
-            <h4>Cabaña para 2 y 3 personas</h4>
-            <p>
-              Un refugio ideal para parejas o pequeñas familias que buscan
-              tranquilidad o confort.
-            </p>
 
-            <img
-              src="https://www.welcomeargentina.com/plantillas/grandes/54998-09Gr.jpg"
-              alt=""
-              width="250"
-              height="250"
-            />
-            <p>
+        <div id="cabanias" class="cabanias">
+          <div id="cabanas">
+            <div class="descubri">
+              <h3>
+                Descubrí el placer de descansar como si estuvieras en casa
+              </h3>
+            </div>
+            <div class="forma_tarjeta">
               <img
-                src="https://cdn-icons-png.flaticon.com/512/800/800905.png"
+                class="imagen_tarjeta"
+                src="https://www.welcomeargentina.com/plantillas/grandes/54998-09Gr.jpg"
                 alt=""
-                width="20"
+                width="250"
+                height="250"
               />
-              20 m2
-            </p>
-            <p>
-              <img
-                src="https://th.bing.com/th/id/R.711cba020a545fb73dbf05e1c261ca92?rik=69Pj%2fW95Klzc%2bg&riu=http%3a%2f%2fprints.ultracoloringpages.com%2f50ecbfe52f0f2813e9ee5e6137234214.png&ehk=imqC0g%2bVmCAWm3L1jOLEaBxWWDTkaVxCTlzcr5cwiic%3d&risl=&pid=ImgRaw&r=0"
-                alt=""
-                width="20"
-              />
-              Ambiente climatizado
-            </p>
-            <p>
-              <img
-                src="https://static.vecteezy.com/system/resources/previews/010/927/159/original/safety-box-line-icon-free-vector.jpg"
-                alt=""
-                width="20"
-              />
-              Caja de seguridad
-            </p>
-            <p>
-              <img
-                src="https://static.vecteezy.com/system/resources/previews/048/086/324/original/a-simple-wifi-silhouette-icon-vector.jpg"
-                alt=""
-                width="20"
-              />
-              Wifi de alta velocidad
-            </p>
-            <p>
-              <img
-                src="https://th.bing.com/th/id/OIP.9-ffXMDiHPSoSWpb7-4GQAHaHa?rs=1&pid=ImgDetMain"
-                alt=""
-                width="20"
-              />
-              Cocina completa
-            </p>
-            <p>
-              <img
-                src="https://static.vecteezy.com/system/resources/previews/007/511/287/original/salon-accessory-hand-drawn-icon-of-blow-dryer-vector.jpg"
-                alt=""
-                width="20"
-              />
-              Articulos de tocador
-            </p>
-            <a href="./pages/detalles_cabana.html">ver detalles</a>
-            <a href="#consulta">Consultar</a>
+              <h3 class="titulo_tarjeta">Cabaña para 2 y 3 personas</h3>
+              <p class="descripcion_tarjeta">
+                Un refugio ideal para parejas o pequeñas familias que buscan
+                tranquilidad o confort.
+              </p>
+              <div class="articulos_cabana">
+                <p>
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/800/800905.png"
+                    alt=""
+                    width="20"
+                  />
+                  20 m2
+                </p>
+                <p>
+                  <img
+                    src="https://img.freepik.com/premium-vector/air-conditioner-outline-illustration-white-background-doodle_907220-313.jpg"
+                    alt=""
+                    width="20"
+                  />
+                  Ambiente climatizado
+                </p>
+                <p>
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/010/927/159/original/safety-box-line-icon-free-vector.jpg"
+                    alt=""
+                    width="20"
+                  />
+                  Caja de seguridad
+                </p>
+                <p>
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/048/086/324/original/a-simple-wifi-silhouette-icon-vector.jpg"
+                    alt=""
+                    width="20"
+                  />
+                  Wifi de alta velocidad
+                </p>
+                <p>
+                  <img
+                    src="https://th.bing.com/th/id/OIP.9-ffXMDiHPSoSWpb7-4GQAHaHa?rs=1&pid=ImgDetMain"
+                    alt=""
+                    width="20"
+                  />
+                  Cocina completa
+                </p>
+                <p>
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/007/511/287/original/salon-accessory-hand-drawn-icon-of-blow-dryer-vector.jpg"
+                    alt=""
+                    width="20"
+                  />
+                  Articulos de tocador
+                </p>
+              </div>
+              <div class="contenedor_botones">
+                <a
+                  class="detalles_cabana_tarjeta botones_tarjeta"
+                  href="./pages/detalles_cabana.html"
+                >
+                  ver detalles
+                </a>
+
+                <a
+                  class="consulta_cabana_tarjeta botones_tarjeta"
+                  href="#consulta"
+                >
+                  Consultar
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      <section id="LasCabanas" class="cardCabanias"></section>
       <!-- FIN SECCION DE CABAÑAS -->
 
       <!-- INICIO SECCION DISPONIBILIDAD -->
       <section id="LaDisponibilidad" class="disponibilidades">
-        <div id="consulta"></div>
-        <div id="consultas"></div>
-        <h2>Consulta sobre disponibilidad</h2>
-        <h4>Fecha de ingreso</h4>
-        <h4>Fecha de salida</h4>
-        <h4>Adultos</h4>
-        <h4>Menores</h4>
-        <h4>Nombre completo</h4>
-        <h4>Email</h4>
-        <h4>Telefono</h4>
-        <h4>Mensaje</h4>
+        <form action="" class="formulario-consulta">
+          <div class="marco_decorativo marco_exterior">
+            <div class="marco_decorativo marco_interior">
+              <h2 class="titulo_disponibilidad">
+                Consulta sobre disponibilidad
+              </h2>
+
+              <div class="grid-form">
+                <!-- Fila 1 -->
+                <div>
+                  <label for="ingreso"><h4>Fecha de ingreso</h4></label>
+                  <input
+                    type="date"
+                    id="ingreso"
+                    name="ingreso"
+                    required
+                    placeholder="DD-MM-AA"
+                  />
+                </div>
+
+                <div>
+                  <label for="salida"> <h4>Fecha de salida</h4></label>
+                  <input
+                    type="date"
+                    id="salida"
+                    name="salida"
+                    required
+                    placeholder="DD-MM-AA"
+                  />
+                </div>
+
+                <div>
+                  <label for="adultos"><h4>Adultos</h4></label>
+                  <input
+                    type="text"
+                    id="adultos"
+                    name="adultos"
+                    placeholder="2"
+                    pattern="[0-9]+"
+                    required
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                  />
+                </div>
+
+                <div>
+                  <label for="menores"><h4>Menores</h4></label>
+                  <input
+                    type="text"
+                    id="menores"
+                    name="menores"
+                    placeholder="1"
+                    pattern="[0-9]+"
+                    required
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                  />
+                </div>
+
+                <!-- Fila 2 -->
+                <div>
+                  <label for="nombre_completo"><h4>Nombre Completo</h4></label>
+                  <input
+                    type="text"
+                    id="nombre_completo"
+                    name="nombre_completo"
+                    placeholder="Ingrese su nombre"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="telefono"><h4>Teléfono</h4></label>
+                  <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="Ingrese su teléfono"
+                    pattern="[0-9]+"
+                    required
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                  />
+                </div>
+
+                <div>
+                  <label for="email"><h4>Email</h4></label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Ingrese su email"
+                    required
+                  />
+                </div>
+
+                <!-- Mensaje ocupa toda la fila -->
+                <div class="mensaje-area">
+                  <label for="mensaje"><h4>Mensaje</h4></label>
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    placeholder="Ingrese su consulta"
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
+
+                <!-- Botón de enviar -->
+                <div class="boton-submit">
+                  <button type="submit">Consultar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
       </section>
       <!-- FIN SECCION DISPONIBILIDAD -->
     </main>
@@ -241,54 +401,53 @@
 
     <!-- INICIO FOOTER -->
     <footer>
-      <!-- INICIO SECCION DE CONTACTOS -->
       <section id="LosContactos" class="contactos">
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/046/398/413/original/server-information-and-server-icon-concept-vector.jpg"
-          alt=""
-          width="70"
-          height=""
-        />
-        <h2>Cabañas SQL</h2>
-        <h3>Contacto</h3>
-        <p>
+        <div class="columna-izquierda">
           <img
-            src="https://th.bing.com/th/id/R.e1b34ec0419753cc8526629abf367968?rik=kT%2bDI%2fLjzW1kAQ&riu=http%3a%2f%2fprints.ultracoloringpages.com%2f71248b24ed5081eff8eb0239d747dbfe.png&ehk=x1%2fCPYmA%2fm2koKf6O%2fQSq197FesJwOPuk4%2fgR8YCn54%3d&risl=&pid=ImgRaw&r=0"
+            src="https://static.vecteezy.com/system/resources/previews/046/398/413/original/server-information-and-server-icon-concept-vector.jpg"
             alt=""
-            width="20"
-            height=""
+            width="70"
           />
-          Cabañas@sma.com.ar
-        </p>
-        <p>
-          <img
-            src="https://th.bing.com/th/id/OIP.Pcu59fM1lEcxkkmTYZxM4AHaEQ?rs=1&pid=ImgDetMain"
-            alt=""
-            width="20"
-            height=""
-          />
-          2944-202020
-        </p>
-        <p>
-          <img
-            src="https://cdn.imgbin.com/15/3/12/imgbin-logo-whatsapp-preparation-3sHi5zvkqas1gyHAgaQrWNpjU.jpg"
-            alt=""
-            width="20"
-            height=""
-          />
-          2944-202020
-        </p>
-        <p>
-          <img
-            src="https://th.bing.com/th/id/OIP.cp2WxsWBPYPR-UvVUCEyUgAAAA?rs=1&pid=ImgDetMain"
-            alt=""
-            width="20"
-            height=""
-          />
-          Coronel Diaz 1156
-        </p>
+          <h2 class="nombre_cabana_footer">Cabañas SQL</h2>
+        </div>
+
+        <div class="columna-derecha">
+          <h3 class="seccion_contacto">Contacto</h3>
+          <p>
+            <img
+              src="https://th.bing.com/th/id/R.e1b34ec0419753cc8526629abf367968?rik=kT%2bDI%2fLjzW1kAQ&pid=ImgRaw"
+              width="50"
+              height=""
+            />
+            Cabañas@sma.com.ar
+          </p>
+          <p>
+            <img
+              src="https://th.bing.com/th/id/OIP.Pcu59fM1lEcxkkmTYZxM4AHaEQ?rs=1&pid=ImgDetMain"
+              width="50"
+              height=""
+            />
+            2944-202020
+          </p>
+          <p>
+            <img
+              src="https://cdn.imgbin.com/15/3/12/imgbin-logo-whatsapp-preparation-3sHi5zvkqas1gyHAgaQrWNpjU.jpg"
+              width="50"
+              height=""
+            />
+            2944-202020
+          </p>
+          <p>
+            <img
+              src="https://th.bing.com/th/id/OIP.cp2WxsWBPYPR-UvVUCEyUgAAAA?rs=1&pid=ImgDetMain"
+              width="500"
+              height=""
+            />
+            Coronel Diaz 1156
+          </p>
+        </div>
       </section>
-      <!-- FIN SECCION CONTACTOS -->
+      <div class="triangulo-decorativo"></div>
     </footer>
     <!-- FIN FOOTER -->
   </body>
